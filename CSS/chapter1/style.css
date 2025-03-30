@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(0, 255, 60);
+}
+
+#first
+{
+                        background-color: red;
+                        color: white;
+}
+#second
+{
+                        background-color: aqua;
+}
+.bg-blue
+{
+                        background-color: purple;
+                        color: yellow;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: aquamarine;
+            /* display: inline; */
+        }
+        .box1{
+            width: 500px;
+            background-color: brown;
+            color: white;
+            border-width: 8px;
+            border-color: rgb(74, 20, 183);
+            border-style: solid;
+            /* padding: 10px; */
+            height: 200px;
+            margin: 20px;
+        }
+        .box3{
+            background-color: rgb(0, 242, 255);
+            color:red;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(255, 127, 129);
+            padding: 10px;
+            height: 90px;
+            width:100%;
+            /* margin: 10px; */
+            box-sizing:border-box;
+        }
+        .box2{
+            background-color: chartreuse;
+            color:red;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(255, 127, 129);
+            padding: 10px;
+            height: 150px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quasi voluptatem, debitis ut neque, numquam corrupti doloremque vel consectetur ex dolore adipisci ducimus, quas nisi praesentium iste cumque aliquid beatae et! Autem, quia iusto.
+        <div class="box3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, ratione cumque aliquid similique eius fugit quod laboriosam soluta! Eligendi quaerat suscipit voluptas et labore incidunt.
+        </div>
+    </div>
+    <div class="box2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eum laudantium fugit laboriosam officia in vitae, consequuntur reiciendis iste explicabo tempora a aspernatur sit quisquam repellendus soluta doloribus ad labore ipsa reprehenderit laborum quas eveniet molestiae. Quaerat accusamus nulla, obcaecati modi molestiae voluptatem. Doloribus necessitatibus impedit sapiente, aliquid doloremque ullam.
+    </div>
+</body>
+</html>

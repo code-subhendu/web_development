@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: cadetblue;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-image: url(nature1.jpg);
+            background-size: cover;
+            /* background-size: 100vw 100vh; */
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* align-items: center; */
+            gap: 10px;
+
+        }
+        img{
+            height: 400px;
+            width: 150px;
+            border: 1px solid white;
+            border-radius: 15px;
+        }
+        .box img{
+            transition-property: all;
+            transition-delay: 0.1s;
+            transition-timing-function: ease-in;
+            transition-duration: 0.3s;
+        }
+        img:hover{
+           width: 400px;
+           height: 600px; 
+           box-shadow: 10px 5px 10px rgb(164, 120, 25);
+        }
+        .box:hover>:not(:hover){
+            filter: blur(8px);
+
+        }
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="animal1"><img class="img1" src="animal1.jpg" alt=""></div>
+        <div class="animal2"><img class="img2" src="animal2.jpg" alt=""></div>
+        <div class="animal3"><img class="img3" src="animal3.jpg" alt=""></div>
+        <div class="animal4"><img class="img4" src="animal4.jpg" alt=""></div>
+        <div class="animal5"><img class="img5" src="animal5.jpg" alt=""></div>
+    </div>
+</body>
+</html>

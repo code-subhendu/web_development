@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(41, 34, 142);
+            height: 50vh;
+            width: 35vw;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        input{
+            background-color: antiquewhite;
+            height: 30px;
+            /* width: 30vw; */
+            /* margin: auto; */
+            display: inline-block;
+            border-radius: 15px;
+            border: 2px solid red;
+            text-align: center;
+            font-size: larger;
+            
+        }
+        p{
+            color: red;
+            background-color: aquamarine;
+            height: 40px;
+            border-radius: 15px;
+            border: 2px solid red;
+            text-align: center;
+            
+        }
+        button{
+            background-color: brown;
+            margin: auto;
+            height: 30px;
+            color: white;
+            border-radius: 15px;
+            border: 2px solid red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="number" placeholder="0">
+        <button onclick="facto()">Calculate factorial</button>
+        <P id="result"> </P>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
